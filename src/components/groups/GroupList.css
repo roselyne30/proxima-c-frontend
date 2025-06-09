@@ -1,0 +1,95 @@
+/* Basic Reset for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin-top: 80px; 
+} */
+.groupWrapper{
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Main Container for Group List */
+.group-list-container {
+  background-color: white;
+  width: 100%;
+  max-width: 600px; /* Max width for larger screens */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow to give depth */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between elements */
+  border: 2px solid #4CAF50; /* Green border around the form */
+}
+
+/* Title Styling */
+.group-list-container h2 {
+  font-size: 32px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* List Styling */
+.group-list-container ul {
+  width: 100%;
+  padding: 0;
+  list-style: none; /* Remove default list styling */
+}
+
+/* Individual List Item Styling */
+.group-list-container li {
+  background-color: #fff;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* List Item Hover Effect */
+.group-list-container li:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
+}
+
+/* Error Message Styling (if any) */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .group-list-container {
+    padding: 20px;
+  }
+
+  .group-list-container h2 {
+    font-size: 24px;
+  }
+
+  .group-list-container li {
+    font-size: 16px;
+  }
+}

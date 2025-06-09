@@ -1,0 +1,83 @@
+/* Basic Reset for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.registerWrapper{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Main Container for Register Form */
+.register-container {
+  background-color: white;
+  width: 30%;
+  height: auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title Styling */
+.register-container h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Input Fields Styling */
+.register-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus Styling on Input Fields */
+.register-container input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Submit Button Styling */
+.register-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.register-container button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .register-container {
+    padding: 20px;
+  }
+
+  .register-container h2 {
+    font-size: 24px;
+  }
+}

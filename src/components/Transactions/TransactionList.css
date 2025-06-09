@@ -1,0 +1,76 @@
+/* Basic Reset for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Main Container for Transaction List */
+.transaction-list-container {
+  background-color: white;
+  width: 100%;
+  max-width: 600px; /* Max width for larger screens */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow to give depth */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px; /* Space between elements */
+  border: 2px solid #4CAF50; /* Green border around the form */
+}
+
+/* Title Styling */
+.transaction-list-container h2 {
+  font-size: 32px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* List Styling */
+.transaction-list-container ul {
+  width: 100%;
+  padding: 0;
+  list-style: none; /* Remove default list styling */
+}
+
+/* Individual List Item Styling */
+.transaction-list-container li {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  color: #333;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* List Item Hover Effect */
+.transaction-list-container li:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
+}
+
+/* Style for No Transactions Found */
+.transaction-list-container p {
+  font-size: 18px;
+  color: #888;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .transaction-list-container {
+    padding: 20px;
+  }
+
+  .transaction-list-container h2 {
+    font-size: 24px;
+  }
+
+  .transaction-list-container li {
+    font-size: 16px;
+  }
+}

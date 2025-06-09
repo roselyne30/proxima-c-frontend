@@ -1,0 +1,112 @@
+/* Basic Reset for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Main Container for Create Group Form */
+.create-groupWrapper{
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.create-group-container {
+  background-color: white;
+  width: 100%;
+  max-width: 600px; /* Max width for larger screens */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow to give depth */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between form elements */
+  border: 2px solid #4CAF50; /* Green border around the form */
+}
+
+/* Title Styling */
+.create-group-container h2 {
+  font-size: 32px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 15px; /* Space between fields */
+}
+
+/* Input and Textarea Fields Styling */
+.create-group-container input,
+.create-group-container textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for input fields */
+}
+
+/* Focus Styling on Input Fields */
+.create-group-container input:focus,
+.create-group-container textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3); /* Green shadow on focus */
+}
+
+/* Label Styling for Inputs */
+.create-group-container label {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Button Styling */
+.create-group-container button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for button */
+}
+
+/* Button Hover Effect */
+.create-group-container button:hover {
+  background-color: #45a049;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .create-group-container {
+    padding: 20px;
+  }
+
+  .create-group-container h2 {
+    font-size: 24px;
+  }
+}

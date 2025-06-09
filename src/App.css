@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.GroupDetailsWrapper{
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+.GroupDetailsContainer{
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.GroupDetailsWrapper h1{
+  padding: 20px 0;
+}
+.GroupDetails,.GroupCard{
+  width: 45%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+  padding:20px 10px ;
+}
+.GroupDetails button,.groupsBtnWrapper button{
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #4CAF50; 
+  color: #fff;
+}
+.GroupDetails button:hover,.groupsBtnWrapper button:hover{
+  background-color: transparent;
+  border: 2px solid #4CAF50;
+  color: #000;
+  cursor: pointer;
+}
+.GroupDetails h2,.GroupCard{
+  text-transform: capitalize;
+}
+.GroupDetailsHolder{
+  max-width:1200px;
+  margin: auto;
+  height: auto;
+}
+.GroupCard{
+  width: 100%;
+}
+.groupsBtnWrapper{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.groupsBtnWrapper button{
+   width: 45%;
+   height: 40px;
+}
+.TransactionHistoryWrapper{
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+.TransactionHistoryHolder{
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+.TransactionHistory{
+ width: 250px;
+ height: 150px;
+ background-color: #fff;
+ border-radius: 10px;
+ padding: 10px;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
