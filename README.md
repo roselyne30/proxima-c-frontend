@@ -1,6 +1,29 @@
-# Getting Started with Create React App
+# Frontend for Deposit and Transaction System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the frontend for the Deposit and Transaction System! This app is built using React and allows users to deposit money into groups, view transaction history, and interact with the backend API for authentication and transactions.
+# Features
+User Authentication: Login with JWT tokens.
+
+Deposit Money: Users can deposit money into different groups.
+
+Transaction History: Users can view the transaction history for specific groups.
+# Tech Stack
+Frontend: React, React Router, Axios
+
+Authentication: JWT (JSON Web Token)
+
+API Communication: Axios
+# Setup Instructions
+Prerequisites
+Node.js (v14 or above)
+
+npm (Node package manager)
+
+## Steps to Set Up Locally
+### Clone the repository:
+git clone git@github.com:roselyne30/proxima-c-frontend.git
+cd proxima-c-frontend.git
+
 
 ## Available Scripts
 
@@ -8,10 +31,10 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.
 You may also see any lint errors in the console.
 
 ### `npm test`
