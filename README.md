@@ -1,6 +1,6 @@
-# Frontend for Deposit and Transaction System
+# Proxima Centauri community
 
-Welcome to the frontend for the Deposit and Transaction System! This app is built using React and allows users to deposit money into groups, view transaction history, and interact with the backend API for authentication and transactions.
+Welcome to the frontend for the Proxima Centauri community! This app is built using React and allows users to deposit money into groups, view transaction history, and interact with the backend API for authentication and transactions.
 # Features
 User Authentication: Login with JWT tokens.
 
